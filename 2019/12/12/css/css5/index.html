@@ -49,6 +49,7 @@
 </script>
 
   <meta name="description" content="单列布局header,content和footer等宽的单列布局先通过对header,content,footer统一设置width：1000px;或者max-width：1000px(这两者的区别是当屏幕小于1000px时，前者会出现滚动条，后者则不会，显示出实际宽度);然后设置margin:auto实现居中即可得到，废话不多说，直接上代码，如下 1&amp;lt;!DOCTYPE html&amp;gt;2&amp;">
+<meta name="keywords" content="web前段">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css常用布局的整理">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;css&#x2F;css5&#x2F;index.html">
@@ -57,7 +58,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V10Ksrao0eo0T9&#x2F;u*73LgWWjuaPJ.suFzmSdQSaqyYcGdP*6j7aplULGsM!&#x2F;r&#x2F;dDIBAAAAAAAA">
 <meta property="og:image" content="http:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V10Ksrao0eo0T9&#x2F;YPRbOj.qcCtYx5rguBgdfqZSSQ36OGffklHY6cTEJtc!&#x2F;r&#x2F;dL8AAAAAAAAA">
-<meta property="og:updated_time" content="2019-12-14T03:20:27.991Z">
+<meta property="og:updated_time" content="2019-12-18T13:16:32.693Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V10Ksrao0eo0T9&#x2F;u*73LgWWjuaPJ.suFzmSdQSaqyYcGdP*6j7aplULGsM!&#x2F;r&#x2F;dDIBAAAAAAAA">
 
@@ -151,12 +152,12 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">0</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">0</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">4</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -245,8 +246,19 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-14 11:20:27" itemprop="dateModified" datetime="2019-12-14T11:20:27+08:00">2019-12-14</time>
+                <time title="修改时间：2019-12-18 21:16:32" itemprop="dateModified" datetime="2019-12-18T21:16:32+08:00">2019-12-18</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/CSS/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS</span>
+                  </a>
+                </span>
+            </span>
 
           
 
@@ -318,7 +330,7 @@
 </li>
 </ul>
 <h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a><strong>备注</strong></h2><p>没有一成不变的布局方式，也没有任何一种方式能够满足各方面的需求，大家可以多积累些经验，根据自己的需要使用最有效布局方式做出最帅最美的页面。</p>
-
+<a id="more"></a>
     </div>
 
     
@@ -336,6 +348,9 @@
 </div>
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/web%E5%89%8D%E6%AE%B5/" rel="tag"># web前段</a>
+          </div>
 
         
 
@@ -429,6 +444,14 @@
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
   </nav>
 </div>
 
@@ -493,8 +516,6 @@
   </div>
 
   
-  
-  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="true"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -502,7 +523,6 @@
 <script src="/js/schemes/pisces.js"></script>
 <script src="/js/next-boot.js"></script>
 
-  <script defer src="/lib/three/three.min.js"></script>
 
 
   
