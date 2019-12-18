@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('http://yoursite.com').hostname,
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"leftaa","display":"post","padding":18,"offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    comments: {"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="HTML基本结构HTML：&amp;lt;html&amp;gt;文档&amp;lt;&#x2F;html&amp;gt;头部：&amp;lt;head&amp;gt;标题、字符集&amp;lt;&#x2F;head&amp;gt;主体：&amp;lt;boby&amp;gt;文本、图像、视频&amp;lt;&#x2F;boby&amp;gt;   HTML标签 &amp;lt;html&amp;gt;&amp;lt;&#x2F;html&amp;gt;    html标签是由尖括号包括 html标签是成对出现的 第一个是开始，第二个结束   &amp;lt;br&#x2F;&amp;g">
+<meta property="og:type" content="article">
+<meta property="og:title" content="HTML基本知识">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;05&#x2F;html&#x2F;html1&#x2F;index.html">
+<meta property="og:site_name" content="Tianxudong blog">
+<meta property="og:description" content="HTML基本结构HTML：&amp;lt;html&amp;gt;文档&amp;lt;&#x2F;html&amp;gt;头部：&amp;lt;head&amp;gt;标题、字符集&amp;lt;&#x2F;head&amp;gt;主体：&amp;lt;boby&amp;gt;文本、图像、视频&amp;lt;&#x2F;boby&amp;gt;   HTML标签 &amp;lt;html&amp;gt;&amp;lt;&#x2F;html&amp;gt;    html标签是由尖括号包括 html标签是成对出现的 第一个是开始，第二个结束   &amp;lt;br&#x2F;&amp;g">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-12-14T03:20:49.904Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://yoursite.com/2019/12/05/html/html1/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>HTML基本知识 | Tianxudong blog</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <a href="https://github.com/" target="_blank" rel="noopener" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Tianxudong blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">欢迎来到田旭东的博客</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">0</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">0</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">18</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/12/05/html/html1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/tou.jpg">
+      <meta itemprop="name" content="五月花再开">
+      <meta itemprop="description" content="风雨能带走的都是虚情，时间能带走的都是过客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Tianxudong blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          HTML基本知识
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-05 15:27:30" itemprop="dateCreated datePublished" datetime="2019-12-05T15:27:30+08:00">2019-12-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-12-14 11:20:49" itemprop="dateModified" datetime="2019-12-14T11:20:49+08:00">2019-12-14</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="HTML基本结构"><a href="#HTML基本结构" class="headerlink" title="HTML基本结构"></a>HTML基本结构</h2><p>HTML：<code>&lt;html&gt;文档&lt;/html&gt;</code><br>头部：<code>&lt;head&gt;标题、字符集&lt;/head&gt;</code><br>主体：<code>&lt;boby&gt;文本、图像、视频&lt;/boby&gt;</code>  </p>
+<h2 id="HTML标签"><a href="#HTML标签" class="headerlink" title="HTML标签"></a>HTML标签</h2><ul>
+<li><p><code>&lt;html&gt;&lt;/html&gt;</code>  </p>
+<ul>
+<li>html标签是由尖括号包括</li>
+<li>html标签是成对出现的</li>
+<li>第一个是开始，第二个结束</li>
+</ul>
+</li>
+<li><p><code>&lt;br/&gt;</code> 强制换行</p>
+</li>
+<li><p><code>&lt;hr/&gt;</code> 水平线</p>
+</li>
+<li><p><code>&lt;center&gt;&lt;/center&gt;</code> 内容居中显示</p>
+<h2 id="HTML编辑器"><a href="#HTML编辑器" class="headerlink" title="HTML编辑器"></a>HTML编辑器</h2></li>
+</ul>
+<ul>
+<li><p>Notepad</p>
+<ul>
+<li>启动软件</li>
+<li>编辑文件</li>
+<li>保存html</li>
+<li>浏览器运行</li>
+</ul>
+</li>
+<li><p>Notepad++</p>
+</li>
+<li><p>Sublime Text3</p>
+<h2 id="HTML基本的标签"><a href="#HTML基本的标签" class="headerlink" title="HTML基本的标签"></a>HTML基本的标签</h2></li>
+<li><p>HTML标题</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>一级大标题<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>二级标题<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>三级标题<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>四级标题<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>五级标题<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>六级小标题<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span></pre></td></tr></table></figure></li>
+<li><p>HTML段落</p>
+<ul>
+<li><code>&lt;p&gt;&lt;/p&gt;</code></li>
+</ul>
+</li>
+<li><p>HTML链接</p>
+<ul>
+<li><code>&lt;a&gt;</code></li>
+</ul>
+</li>
+<li><p>HTML图像</p>
+<ul>
+<li><code>&lt;img&gt;</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="HTML元素与属性"><a href="#HTML元素与属性" class="headerlink" title="HTML元素与属性"></a>HTML元素与属性</h2><p>元素: 开始标签到结束标签的所有内容<br>例: <code>&lt;h1&gt;这是元素!!!&lt;/h1&gt;</code><br>属性: 属性的形式是以”名称=值”,属性是在HTML开始标签中指定的。<br>例：<code>&lt;h1 属性=&quot;这是属性&quot;&gt;&lt;/h1&gt;</code></p>
+<h2 id="HTML列表"><a href="#HTML列表" class="headerlink" title="HTML列表"></a>HTML列表</h2><ul>
+<li>无序列表<ul>
+<li><code>&lt;ui&gt; 无序列表标记</code></li>
+<li><code>&lt;li&gt;列表项目标记&lt;/li&gt;</code></li>
+<li><code>&lt;/ui&gt;</code>  </li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>有序列表<ol>
+<li><code>&lt;ol&gt;有序列表标记</code></li>
+<li><code>&lt;li&gt;列表项&lt;/li&gt;</code></li>
+<li><code>&lt;/ol&gt;</code></li>
+</ol>
+</li>
+</ol>
+<h3 id="定义列表"><a href="#定义列表" class="headerlink" title="定义列表"></a>定义列表</h3><p>项目+注释  </p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dl</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dt</span>&gt;</span>软件名/标题<span class="tag">&lt;/<span class="name">dt</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dd</span>&gt;</span>软件的作用/功能<span class="tag">&lt;/<span class="name">dd</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">dl</span>&gt;</span></span></pre></td></tr></table></figure>
+
+<h2 id="HTML图像标记"><a href="#HTML图像标记" class="headerlink" title="HTML图像标记"></a>HTML图像标记</h2><ol>
+<li><p>src：图片的位置与格式</p>
+</li>
+<li><p>width：图片的宽度</p>
+</li>
+<li><p>height：图片的高度</p>
+</li>
+<li><p>border：图片的边框宽度</p>
+</li>
+<li><p>alt</p>
+<ul>
+<li>图片加载完成后，鼠标移动到图片上时，出现文字</li>
+<li>使搜索引擎通过文字搜索到此图片</li>
+</ul>
+</li>
+<li><p><img> 单标记</p>
+</li>
+</ol>
+<h2 id="HTML超链接"><a href="#HTML超链接" class="headerlink" title="HTML超链接"></a>HTML超链接</h2><ul>
+<li><p><code>&lt;a herf=&quot; &quot; targe=&quot; &quot; name=&quot; &quot;&gt;&lt;/a&gt;</code></p>
+</li>
+<li><p>herf：链接地址网页视频图片音乐。</p>
+</li>
+<li><p>name：网页锚点名称</p>
+</li>
+<li><p>target：打开方式</p>
+<ul>
+<li>_blank：新窗口打开</li>
+<li>_seif：当前窗口</li>
+<li>_parent：在父窗口打开</li>
+<li>_top：在顶层窗口打开<h2 id="HTML表格"><a href="#HTML表格" class="headerlink" title="HTML表格"></a>HTML表格</h2></li>
+</ul>
+</li>
+<li><p>创建表格</p>
+<ul>
+<li>创建表格标签：<code>&lt;table&gt;&lt;/table&gt;</code></li>
+<li>创建行标签：<code>&lt;tr&gt;&lt;/tr&gt;</code></li>
+<li>创建列标签：<code>&lt;td&gt;&lt;/td&gt;</code></li>
+</ul>
+</li>
+<li><p>跨行跨列表格</p>
+<ul>
+<li>colspan=”所跨的列数”</li>
+<li>rowspan=”所跨的行数”</li>
+</ul>
+</li>
+<li><p>表格布局</p>
+<ul>
+<li><p>cellpadding=”文字与边框的距离”</p>
+</li>
+<li><p>cellspacing=”表格内框的宽度”</p>
+</li>
+<li><p>数据分组</p>
+<ul>
+<li><code>&lt;thead&gt;</code>：对应报表的页眉</li>
+<li><code>&lt;thody&gt;</code>：报表的数据主体</li>
+<li><code>&lt;tfoot&gt;</code>：报表的页脚部分</li>
+</ul>
+</li>
+<li><p><code>&lt;caption&gt;</code>：标题</p>
+</li>
+<li><p><code>&lt;th&gt;</code>：表头</p>
+<h2 id="HTML表单"><a href="#HTML表单" class="headerlink" title="HTML表单"></a>HTML表单</h2></li>
+</ul>
+</li>
+<li><p>基本语法</p>
+<ul>
+<li>表单的各种元素</li>
+<li>action=”表单提交地址”</li>
+<li>method=”提交方式”</li>
+</ul>
+</li>
+<li><p>元素</p>
+<ul>
+<li><p>文本</p>
+<ul>
+<li>type=”text”</li>
+<li>多行文本框<ul>
+<li><code>&lt;textarea&gt;&lt;/textarea&gt;</code></li>
+<li>cols=”行数”</li>
+<li>rows=”列数”</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>密码框</p>
+<ul>
+<li>type=”password”</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>按钮</p>
+<ul>
+<li><p>单选按钮</p>
+<ul>
+<li>type=”redio”</li>
+</ul>
+</li>
+<li><p>复选框</p>
+<ul>
+<li>type=”checkbox”</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>下拉列表<code>&lt;input&gt;</code></p>
+<ul>
+<li><p>name=”元素名称”</p>
+</li>
+<li><p>type=”类型”</p>
+</li>
+<li><p>value=”值”</p>
+</li>
+<li><p>size=”显示宽度”</p>
+</li>
+<li><p>maxlength=”最大字符长度”</p>
+</li>
+<li><p>checked=”是否选中”</p>
+</li>
+<li><p>列表框</p>
+<ul>
+<li><code>&lt;select&gt;显示选项&lt;/select&gt;</code></li>
+<li><code>&lt;option&gt;每个选项&lt;/option&gt;</code></li>
+</ul>
+</li>
+<li><p>文件域</p>
+<ul>
+<li>type=”file”</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h2><p>以上便是今天的全部内容啦！感谢收看。</p>
+
+    </div>
+
+    
+    
+    
+
+      <div>
+  
+    <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+  
+</div>
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/12/04/%E5%85%B6%E4%BB%96/bolg%20hexo/" rel="prev" title="如何使用hexo搭建自己的博客">
+      <i class="fa fa-chevron-left"></i> 如何使用hexo搭建自己的博客
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/12/05/html/html3/" rel="next" title="HTML5新增的元素、标签及特性整理">
+      HTML5新增的元素、标签及特性整理 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML基本结构"><span class="nav-text">HTML基本结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML标签"><span class="nav-text">HTML标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML编辑器"><span class="nav-text">HTML编辑器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML基本的标签"><span class="nav-text">HTML基本的标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML元素与属性"><span class="nav-text">HTML元素与属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML列表"><span class="nav-text">HTML列表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#定义列表"><span class="nav-text">定义列表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML图像标记"><span class="nav-text">HTML图像标记</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML超链接"><span class="nav-text">HTML超链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML表格"><span class="nav-text">HTML表格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML表单"><span class="nav-text">HTML表单</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#备注"><span class="nav-text">备注</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="五月花再开"
+      src="/images/tou.jpg">
+  <p class="site-author-name" itemprop="name">五月花再开</p>
+  <div class="site-description" itemprop="description">风雨能带走的都是虚情，时间能带走的都是过客</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">五月花再开</span>
+<!--
+  -->
+</div>
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  本站访客数:<span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+<!--
+
+
+
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.6.0
+  </div>
+-->
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共13.4k字</span>
+</div>
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+  <script defer src="/lib/three/three.min.js"></script>
+
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/love.js"></script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
