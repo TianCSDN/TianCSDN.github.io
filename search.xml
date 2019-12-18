@@ -670,6 +670,23 @@
 ]]></content>
   </entry>
   <entry>
+    <title>HTML分类及特性整理</title>
+    <url>/2019/12/05/html/html2/</url>
+    <content><![CDATA[<h2 id="块级元素"><a href="#块级元素" class="headerlink" title="块级元素"></a>块级元素</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span>    <span class="tag">&lt;<span class="name">ol</span>&gt;</span>    <span class="tag">&lt;<span class="name">li</span>&gt;</span>    <span class="tag">&lt;<span class="name">dl</span>&gt;</span>    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>    </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hr</span>&gt;</span>    <span class="tag">&lt;<span class="name">p</span>&gt;</span>    <span class="tag">&lt;<span class="name">div</span>&gt;</span>    <span class="tag">&lt;<span class="name">pre</span>&gt;</span>    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>...<span class="tag">&lt;<span class="name">h6</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span>    <span class="tag">&lt;<span class="name">menu</span>&gt;</span>    <span class="tag">&lt;<span class="name">table</span>&gt;</span>    <span class="tag">&lt;<span class="name">address</span>&gt;</span>    </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">fieldset</span>&gt;</span>    <span class="tag">&lt;<span class="name">isindex</span>&gt;</span>    <span class="tag">&lt;<span class="name">blockquote</span>&gt;</span></span></pre></td></tr></table></figure>
+<h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><ol>
+<li>块状元素一般都作为其他元素的容器，可以容纳其他内联元素和块状元素。</li>
+<li>块状元素可以定义自己的长度和宽度及边距。</li>
+<li>块状元素在网页中以矩形区域显示。</li>
+<li>默认情况下，块状元素会占据一行，块状元素会按顺序自上向下排列。<h2 id="行内元素（内联元素）"><a href="#行内元素（内联元素）" class="headerlink" title="行内元素（内联元素）"></a>行内元素（内联元素）</h2><figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="section">&lt;i&gt;</span>    <span class="section">&lt;a&gt;</span>    <span class="section">&lt;q&gt;</span>    <span class="section">&lt;u&gt;</span>    <span class="section">&lt;em&gt;</span>    <span class="section">&lt;br&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="section">&lt;big&gt;</span>    <span class="section">&lt;sup&gt;</span>    <span class="section">&lt;bdo&gt;</span>    <span class="section">&lt;dfn&gt;</span>    <span class="section">&lt;kbd&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="section">&lt;sub&gt;</span>    <span class="section">&lt;var&gt;</span>    <span class="section">&lt;abbr&gt;</span>    <span class="section">&lt;cite&gt;</span>    <span class="section">&lt;code&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="section">&lt;samp&gt;</span>    <span class="section">&lt;span&gt;</span>    <span class="section">&lt;small&gt;</span>    <span class="section">&lt;lable&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="section">&lt;select&gt;</span>    <span class="section">&lt;strong&gt;</span>    <span class="section">&lt;strike&gt;</span>    <span class="section">&lt;button&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="section">&lt;textarea&gt;</span>    <span class="section">&lt;acronym&gt;</span>    <span class="section">&lt;img&gt;</span>    <span class="section">&lt;input&gt;</span></span></pre></td></tr></table></figure>
+<h3 id="特性-1"><a href="#特性-1" class="headerlink" title="特性"></a>特性</h3></li>
+<li>宽度及边距由内容决定，只有在内容超过html的宽度时，才会换行。</li>
+<li>和其他元素都在一行上。</li>
+<li>设置高度height无效，可以通过line-height来设置。</li>
+<li>只能容纳文本或其他内联元素。<h2 id="置换元素"><a href="#置换元素" class="headerlink" title="置换元素"></a><strong>置换元素</strong></h2>行内元素中的一种特殊存在，像其中的<code>&lt;img&gt;&lt;input&gt;&lt;select&gt;</code>等这些元素都是置换元素，浏览器会根据这些元素的属性和标签，来决定元素的具体显示内容，这些元素往往没有内容，就是一个空元素</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
     <title>HTML5新增的元素、标签及特性整理</title>
     <url>/2019/12/05/html/html3/</url>
     <content><![CDATA[<p><font size="2">首先，说起html5大家一定要明白几个特性，要知道html5是以实用为主的，所有要求都没那么严格。</font></p>
@@ -819,23 +836,6 @@
 <td align="left"></td>
 </tr>
 </tbody></table>
-]]></content>
-  </entry>
-  <entry>
-    <title>HTML分类及特性整理</title>
-    <url>/2019/12/05/html/html2/</url>
-    <content><![CDATA[<h2 id="块级元素"><a href="#块级元素" class="headerlink" title="块级元素"></a>块级元素</h2><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span>    <span class="tag">&lt;<span class="name">ol</span>&gt;</span>    <span class="tag">&lt;<span class="name">li</span>&gt;</span>    <span class="tag">&lt;<span class="name">dl</span>&gt;</span>    <span class="tag">&lt;<span class="name">dt</span>&gt;</span>    <span class="tag">&lt;<span class="name">dd</span>&gt;</span>    </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hr</span>&gt;</span>    <span class="tag">&lt;<span class="name">p</span>&gt;</span>    <span class="tag">&lt;<span class="name">div</span>&gt;</span>    <span class="tag">&lt;<span class="name">pre</span>&gt;</span>    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>...<span class="tag">&lt;<span class="name">h6</span>&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">form</span>&gt;</span>    <span class="tag">&lt;<span class="name">menu</span>&gt;</span>    <span class="tag">&lt;<span class="name">table</span>&gt;</span>    <span class="tag">&lt;<span class="name">address</span>&gt;</span>    </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">fieldset</span>&gt;</span>    <span class="tag">&lt;<span class="name">isindex</span>&gt;</span>    <span class="tag">&lt;<span class="name">blockquote</span>&gt;</span></span></pre></td></tr></table></figure>
-<h3 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h3><ol>
-<li>块状元素一般都作为其他元素的容器，可以容纳其他内联元素和块状元素。</li>
-<li>块状元素可以定义自己的长度和宽度及边距。</li>
-<li>块状元素在网页中以矩形区域显示。</li>
-<li>默认情况下，块状元素会占据一行，块状元素会按顺序自上向下排列。<h2 id="行内元素（内联元素）"><a href="#行内元素（内联元素）" class="headerlink" title="行内元素（内联元素）"></a>行内元素（内联元素）</h2><figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="section">&lt;i&gt;</span>    <span class="section">&lt;a&gt;</span>    <span class="section">&lt;q&gt;</span>    <span class="section">&lt;u&gt;</span>    <span class="section">&lt;em&gt;</span>    <span class="section">&lt;br&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="section">&lt;big&gt;</span>    <span class="section">&lt;sup&gt;</span>    <span class="section">&lt;bdo&gt;</span>    <span class="section">&lt;dfn&gt;</span>    <span class="section">&lt;kbd&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="section">&lt;sub&gt;</span>    <span class="section">&lt;var&gt;</span>    <span class="section">&lt;abbr&gt;</span>    <span class="section">&lt;cite&gt;</span>    <span class="section">&lt;code&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="section">&lt;samp&gt;</span>    <span class="section">&lt;span&gt;</span>    <span class="section">&lt;small&gt;</span>    <span class="section">&lt;lable&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="section">&lt;select&gt;</span>    <span class="section">&lt;strong&gt;</span>    <span class="section">&lt;strike&gt;</span>    <span class="section">&lt;button&gt;</span>  </span></pre></td></tr><tr><td class="code"><pre><span class="line"><span class="section">&lt;textarea&gt;</span>    <span class="section">&lt;acronym&gt;</span>    <span class="section">&lt;img&gt;</span>    <span class="section">&lt;input&gt;</span></span></pre></td></tr></table></figure>
-<h3 id="特性-1"><a href="#特性-1" class="headerlink" title="特性"></a>特性</h3></li>
-<li>宽度及边距由内容决定，只有在内容超过html的宽度时，才会换行。</li>
-<li>和其他元素都在一行上。</li>
-<li>设置高度height无效，可以通过line-height来设置。</li>
-<li>只能容纳文本或其他内联元素。<h2 id="置换元素"><a href="#置换元素" class="headerlink" title="置换元素"></a><strong>置换元素</strong></h2>行内元素中的一种特殊存在，像其中的<code>&lt;img&gt;&lt;input&gt;&lt;select&gt;</code>等这些元素都是置换元素，浏览器会根据这些元素的属性和标签，来决定元素的具体显示内容，这些元素往往没有内容，就是一个空元素</li>
-</ol>
 ]]></content>
   </entry>
   <entry>
